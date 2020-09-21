@@ -1,0 +1,12 @@
+	g++ -pthread MSQ.cpp OpsTest.cpp BQ.cpp -std=c++11 -latomic -o meas >& output
+	./meas 1 $1 $2
+	./meas 2 $1 $2
+	./meas 3 $1 $2
+	./meas 4 $1 $2
+	./meas 8 $1 $2
+	./meas 16 $1 $2
+	./meas 32 $1 $2
+	./meas 64 $1 $2
+	./meas 128 $1 $2
+	rm output
+	rm meas

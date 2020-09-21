@@ -1,0 +1,1 @@
+int helpfunction(int num_of_threads, int num_of_tests);
